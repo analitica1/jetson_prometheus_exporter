@@ -1,6 +1,6 @@
 INSTALACIÓN:
 
-Requisitos: Tener pip3 instalado:
+Requisitos -> Tener pip3 instalado:
 
 - `sudo apt install python3-pip`
 
@@ -41,8 +41,9 @@ al encender el equipo, se deben seguir los siguientes pasos:
 4. Creamos el archivo que manejará el servicio encargado de ejecutar el script que creamos.
 Para esto:
 
-	1. Corremos la linea `sudo nano /etc/systemd/system/jetson_exp.service`
-	2. Copiamos el siguiente contenido dentro del archivo:
+	1. Instalamos el editor de texto nano `sudo apt install nano`
+	2. Corremos la linea `sudo nano /etc/systemd/system/jetson_exp.service`
+	3. Copiamos el siguiente contenido dentro del archivo:
 
 		`[Unit]`
 		
@@ -58,7 +59,7 @@ Para esto:
 		
 		`WantedBy=multi-user.target`
 		
-	3. Damos Ctrl+O y Enter para guardar el archivo, y Ctrl+X para salir del editor nano
+	4. Damos Ctrl+O y Enter para guardar el archivo, y Ctrl+X para salir del editor nano
 
 5. Ahora configuramos el demonio encargado de manejar los servicios en Ubuntu, para esto usamos `systemctl`:
 
@@ -68,9 +69,9 @@ Para esto:
 	Deberia aparecer algo como esto, que nos dice que el servicio está cargado correctamente, pero
 	está inhabilitado:
 
-		`Loaded: loaded (/etc/systemd/system/firstscript.service; disabled; vendor preset:
-		enabled)
-		Active: inactive (dead)`
+		`Loaded: loaded (/etc/systemd/system/firstscript.service; disabled; vendor preset:enabled)`
+		
+		`Active: inactive (dead)`
 
 	3. `sudo systemctl enable jetson_exp.service`
 	4. `sudo systemctl start jetson_exp.service`
