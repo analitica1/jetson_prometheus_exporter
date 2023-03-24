@@ -36,7 +36,7 @@ al encender el equipo, se deben seguir los siguientes pasos:
 
 2. Hacemos ejecutable el script con `sudo chmod u+x jetson_exp.sh`
 
-3. Movemos el script a /usr/local/bin/ con `sudo mv /usr/local/bin/ jetson_exp.sh`
+3. Movemos el script a /usr/local/bin/ con `sudo mv jetson_exp.sh /usr/local/bin/`
 
 4. Creamos el archivo que manejará el servicio encargado de ejecutar el script que creamos.
 Para esto:
