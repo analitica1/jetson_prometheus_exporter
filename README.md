@@ -51,7 +51,7 @@ Para esto:
 
 		`[Service]`
 		
-		`ExecStart=/usr/bin/jetson_exp.sh`
+		`ExecStart=/usr/local/bin/jetson_exp.sh`
 		
 		`TimeoutSec=2s`
 
