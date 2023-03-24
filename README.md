@@ -1,6 +1,10 @@
 INSTALACIÓN:
 
-Requisitos: Tener pip3 instalado (`sudo apt install python3-pip`)
+Requisitos: Tener pip3 instalado:
+
+- `sudo apt install python3-pip`
+
+- `pip3 install pip --upgrade`
 
 Estando en la carpeta `jetson_prometheus_exporter`:
 
