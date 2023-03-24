@@ -12,15 +12,19 @@ Estando en la carpeta `jetson_prometheus_exporter`:
 
 2. sudo python3 setup.py install 
 
-3. sudo python3 -m jetson_prometheus_exporter
+3. sudo python3 -m jetson_prometheus_exporter  (Esta línea arranca el programa, pero si el equipo se apaga
+						el programa tendrá que ser arrancado de nuevo de manera manual.)
 
-See `python3 -m jetson_prometheus_exporter --help` for command line arguments.
+4. Para verificar el funcionamiento del exporter, entrar desde cualquier navegador a `localhost:8000`.
+
+Ver `python3 -m jetson_prometheus_exporter --help` para todas las posibilidades que ofrece el comando.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 			`Jetson Prometheus Exporter como servicio`
 
-Para configurar el jetson_prometheus_exporter como servicio de Ubuntu:
+Para configurar el jetson_prometheus_exporter como servicio de Ubuntu, de  manera que el servicio inicie automáticamente
+al encender el equipo, se deben seguir los siguientes pasos:
 
 1. Crear un archivo .sh, por ejemplo `jetson_exp.sh`, y en este poner el siguiente contenido:
 
