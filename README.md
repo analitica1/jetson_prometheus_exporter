@@ -44,15 +44,15 @@ Para esto:
 	1. Corremos la linea `sudo nano /etc/systemd/system/jetson_exp.service`
 	2. Copiamos el siguiente contenido dentro del archivo:
 
-	        [Unit]
-		Description=Prometheus exporter for NVIDIA Jetson Nano Stats
+	[Unit]
+	Description=Prometheus exporter for NVIDIA Jetson Nano Stats
 
-		[Service]
-		ExecStart=/usr/bin/jetson_exp.sh
-		TimeoutSec=2s
+	[Service]
+	ExecStart=/usr/bin/jetson_exp.sh
+	TimeoutSec=2s
 
-		[Install]
-		WantedBy=multi-user.target
+	[Install]
+	WantedBy=multi-user.target
 		
 	3. Damos Ctrl+O y Enter para guardar el archivo, y Ctrl+X para salir del editor nano
 
