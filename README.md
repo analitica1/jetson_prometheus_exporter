@@ -28,11 +28,11 @@ al encender el equipo, se deben seguir los siguientes pasos:
 
 1. Crear un archivo .sh, por ejemplo `jetson_exp.sh`, y en este poner el siguiente contenido:
 
-	`#!/bin/bash
+	#!/bin/bash
 	
 	cd /home/analitica/jetson_prometheus_exporter
 	
-	sudo python3 -m jetson_prometheus_exporter`
+	sudo python3 -m jetson_prometheus_exporter
 
 2. Hacemos ejecutable el script con `sudo chmod u+x jetson_exp.sh`
 
@@ -44,7 +44,7 @@ Para esto:
 	1. Corremos la linea `sudo nano /etc/systemd/system/jetson_exp.service`
 	2. Copiamos el siguiente contenido dentro del archivo:
 
-	        `[Unit]
+	        [Unit]
 		Description=Prometheus exporter for NVIDIA Jetson Nano Stats
 
 		[Service]
@@ -52,7 +52,7 @@ Para esto:
 		TimeoutSec=2s
 
 		[Install]
-		WantedBy=multi-user.target`
+		WantedBy=multi-user.target
 		
 	3. Damos Ctrl+O y Enter para guardar el archivo, y Ctrl+X para salir del editor nano
 
