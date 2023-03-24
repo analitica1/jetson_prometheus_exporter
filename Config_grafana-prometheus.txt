@@ -1,0 +1,3 @@
+- Para Prometheus, cambiar en prometheus.yml los intervalos de tiempo a 100ms.
+
+- Para Grafana, cambiar en grafana.ini el intervalo minimo de refresco a 100ms, y añadir en el dashboard 1s.

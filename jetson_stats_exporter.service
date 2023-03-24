@@ -1,0 +1,8 @@
+[Unit]
+Description=Prometheus exporter for NVIDIA Jetson Nano Stats
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/jetson_exp.sh
+
+[Install]
+WantedBy=multi-user.target
