@@ -10,7 +10,7 @@ Estando en la carpeta `jetson_prometheus_exporter`:
 
 1. sudo -H pip3 install -r requirements.txt
 
-2. python3 setup.py install 
+2. sudo python3 setup.py install 
 
 3. sudo python3 -m jetson_prometheus_exporter
 
