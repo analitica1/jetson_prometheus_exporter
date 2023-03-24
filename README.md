@@ -45,13 +45,17 @@ Para esto:
 	2. Copiamos el siguiente contenido dentro del archivo:
 
 		`[Unit]`
+		
 		`Description=Prometheus exporter for NVIDIA Jetson Nano Stats`
 
 		`[Service]`
+		
 		`ExecStart=/usr/bin/jetson_exp.sh`
+		
 		`TimeoutSec=2s`
 
 		`[Install]`
+		
 		`WantedBy=multi-user.target`
 		
 	3. Damos Ctrl+O y Enter para guardar el archivo, y Ctrl+X para salir del editor nano
